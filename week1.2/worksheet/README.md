@@ -67,7 +67,7 @@ exit status and display the following error on the standard error channel.
 
     Error: no numbers provided
 
-Use the `sys.exit()` function to do this, as you did in `task_a.py`.
+Use the `sys.exit()` function to do this, as you did in `task1.py`.
 
 ### Notes
 
