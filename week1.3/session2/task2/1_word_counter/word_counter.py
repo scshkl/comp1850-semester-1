@@ -4,7 +4,12 @@
 # You can use any of the .txt files to test this - or even make your own.
 
 # open and read the file
-
+with open("story.txt", "r") as f:
+    data = f.read()
+    data = data.strip().split()
+    count_words = len(data)
+    
+    print(count_words)
 # calculate the number of words
 # hint: you could use .split() to break up by spaces
 # hint: watch out for empty lines that might give you empty strings

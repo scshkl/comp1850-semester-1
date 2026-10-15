@@ -3,7 +3,7 @@
 with open("student_data.csv", "r") as f:
     data = f.readlines()
 
-print(data)
+# print(data)
 # this is a good use for list comprehensions:
 data = [ line.strip().split(",") for line in data ]
 
