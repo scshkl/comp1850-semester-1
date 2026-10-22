@@ -21,6 +21,20 @@ def most_frequent_string(votes):
     # Hint 1: You can complete this task with for loops or comprehensions 
     # Hint 2: Think about the properties of the various collection-types
 
+    if votes:
+        dict_comp = {}
+        dict_comp = {x: votes.count(x) for x in votes}
+
+        # for x in votes:
+        #     if x in dict_comp:
+        #         dict_comp[x] = dict_comp[x] + 1
+        #     else:
+        #         dict_comp[x] = 0
+        freq_string = [[x, y] for x, y in dict_comp.items() if y == max(dict_comp.values())]
+        return freq_string[0]
+    
+    return (None, None)
+
 
 fruit = ['date', 'apple', 'cherry', 'date', 'apple', 'apple', 'elderberry',
          'date', 'elderberry', 'elderberry', 'date', 'banana']
@@ -30,6 +44,16 @@ names = ['Jesy', 'Leigh-Anne', 'Perrie', 'Leigh-Anne', 'Jade',
          'Leigh-Anne', 'Jade', 'Jesy', 'Jade', 'Perrie', 'Jade',
          'Jade', 'Jesy', 'Perrie', 'Perrie', 'Jade', 'Leigh-Anne',
          'Jesy', 'Jesy', 'Perrie', 'Jesy']
+
+
+
+
+
+
+
+
+
+
 
 
 # Check if correct output is produced
