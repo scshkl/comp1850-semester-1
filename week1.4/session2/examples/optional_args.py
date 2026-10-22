@@ -1,6 +1,7 @@
 # code examples on slide 5
 for item in range(5):
     print(item, end=":")
+    # print(item)
 
 print("hello", "world", "there", sep='@')
 
