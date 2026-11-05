@@ -42,6 +42,17 @@ class QuakeDataset:
         # each dictionary and convert them into the required types before
         # creating a Quake object and storing it in the list.
 
+        self.data.clear()
+
+        for q in self.feed.reader():
+            time = q['time']
+            lon = float(q['longitude'])
+            lat = float(q['latitude'])
+            depth = float(q['depth'])
+            mag = float(q['mag'])
+            quake = Quake(time, lon, lat, ...)
+            self.data.append(quake)
+
     def __len__(self):
         """
         Returns the size of this dataset.
