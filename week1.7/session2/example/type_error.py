@@ -5,5 +5,5 @@
 value_1 = 50
 str_message = "Hello"
 
-output = str_message + value_1
+output = str_message + str(value_1)
 print(output)

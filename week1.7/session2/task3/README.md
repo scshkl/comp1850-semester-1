@@ -26,7 +26,7 @@ and `TypeError` at line 5 with the multiplication operation:
 
 ### Step 2: Launch the script with `pdb` and then enter.
 
-	python -m pdb calculate_total.python
+	python -m pdb calculate_total.py
 
 
 The program will immediately pause on the first line:
